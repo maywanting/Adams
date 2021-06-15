@@ -154,28 +154,19 @@ function theme_customize_register($wp_customize)
         'section' => 'biji_setting',
         'type' => 'textarea'
     ));
-
-    /*$wp_customize->add_section('biji_pay_img', array(
-        'default' => ''
+    $wp_customize->add_section('biji_img_logo', array(
+        'title' => 'logo設定',
+        'priority' => 102
     ));
-    $wp_customize->add_setting('biji_pay_img_alipay', array(
+    $wp_customize->add_setting('biji_img_logo_1', array(
         'default' => '',
         'transport' => 'postMessage',
         'type' => 'option'
     ));
-    $wp_customize->add_setting('biji_pay_img_wexpay', array(
-        'default' => '',
-        'transport' => 'postMessage',
-        'type' => 'option'
-    ));
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'biji_pay_img_alipay', array(
-        'label' => '支付宝收款',
-        'section' => 'biji_pay_img'
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'biji_img_logo_1', array(
+        'label' => 'logo設定',
+        'section' => 'biji_img_logo'
     )));
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'biji_pay_img_wexpay', array(
-        'label' => '微信收款',
-        'section' => 'biji_pay_img'
-    )));*/
 }
 
 add_action('customize_register', 'theme_customize_register');

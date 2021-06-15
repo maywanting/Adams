@@ -25,11 +25,15 @@
 <!-- Header -->
 <header class="header">
     <section class="container">
+    <?php if (get_option('biji_img_logo_1')) echo '<img src="' . get_option('biji_img_logo_1') . '"/>'; ?>
+
         <hgroup itemscope itemtype="https://schema.org/WPHeader">
             <h1 class="fullname"><?php (!is_home()) ? wp_title("") : bloginfo('name'); ?></h1>
         </hgroup>
+
+        
         <?php
-        wp_nav_menu(
+        /*wp_nav_menu(
             array(
                 'container' => false,
                 'theme_location' => 'social_nav',
@@ -37,7 +41,7 @@
                 'walker' => new description_walker(),
                 'depth' => 0
             )
-        );
+        );*/
         wp_nav_menu(
             array(
                 'container' => false,
