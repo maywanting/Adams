@@ -24,10 +24,14 @@
                             </p>
                         </main>
                         <footer>
-                            <span class="time"><time datetime="<?php echo get_the_time('c'); ?>" title="<?php echo get_the_time('c'); ?>"
-                                                     itemprop="datePublished" pubdate><?php the_time('Y-m-d'); ?></time>発表</span>
+                            <!-- <span class="time"><time datetime="<?php echo get_the_time(); ?>" title="<?php echo get_the_time(); ?>" itemprop="datePublished" pubdate><?php the_time('Y-m-d'); ?></time>発表aaa</span> -->
+                            <span class="comments"><i class="czs-user"></i> <?php echo get_the_author_meta('nickname', get_post()->post_author);?></span>
                             <span class="hr"></span>
-                            <span class="comments"><?php comments_number('0', '1', '%'); ?> コメント</span>
+                            <span class="time"><i class="czs-time-l"></i> <?php echo get_post_time("Y-m-d h:i:s"); ?></span>
+                            <span class="hr"></span>
+                            <span class="time"><i class="czs-pen-write"></i> <?php echo get_post_modified_time("Y-m-d h:i:s"); ?></span>
+                            <span class="hr"></span>
+                            <span class="comments"><i class="czs-talk-l"></i> <?php comments_number('0', '1', '%'); ?></span>
                             <?php //echo get_post_meta($post->ID, 'dotGood', true) ? '<span class="hr"></span><span class="likes">' . get_post_meta($post->ID, 'dotGood', true) . ' 人喜欢</span>' : ''; ?>
                         </footer>
                     </article>

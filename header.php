@@ -58,18 +58,15 @@
             <?php if (is_single() || is_page()) { ?>
                 <h2 class="fixed-title"></h2>
                 
-               <!-- <div class="fixed-menus"></div>-->
-<!--
+               <!-- <div class="fixed-menus"></div> -->
                 <div class="fields">
-                    <span><i class="czs-time-l"></i> <time datetime="<?php echo get_the_time('c'); ?>" title="<?php echo get_the_time('c'); ?>"
-                                                           itemprop="datePublished" pubdate><?php the_time('Y-m-d') ?></time></span> /
-                    <span><i class="czs-talk-l"></i> <?php comments_number('0', '1', '%'); ?>评</span> /
-                    <a href="javascript:;" data-action="topTop" data-id="<?php the_ID(); ?>"
-                       class="dot-good <?php echo isset($_COOKIE['dotGood_' . $post->ID]) ? 'done' : ''; ?>">
-                        <i class="czs-thumbs-up-l"></i><i class="czs-thumbs-up"></i>
-                        <span class="count"><?php echo get_post_meta($post->ID, 'dotGood', true) ? get_post_meta($post->ID, 'dotGood', true) : '0'; ?></span>赞
-                    </a>
+                    <span><i class="czs-time-l"></i> <?php echo get_post_time("Y-m-d h:i:s"); ?>発表 /
+                    <span><i class="czs-pen-write"></i> <?php echo get_post_time("Y-m-d h:i:s"); ?>変更 /
+                    <span><i class="czs-user"></i> <?php echo get_the_author_meta('nickname', get_post()->post_author);?> /
+                    <span><i class="czs-talk-l"></i> <?php comments_number('0', '1', '%'); ?></span> /
+                    
                 </div>
+<!--
 
                 <div class="socials">
                     <div class="donate">
