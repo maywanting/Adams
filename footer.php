@@ -23,6 +23,9 @@
 
 <div class="setting_tool iconfont">
     <a class="back2top" style="display:none;"><i class="czs-arrow-up-l"></i></a>
+    <?php if (!is_user_logged_in()) {?>
+        <a class="sologin" href="<?php echo bloginfo('url') . '/wp-login.php';?>"><i class="czs-user-l"></i></a>
+    <?php } ?>
     <?php if (!is_home() && !is_front_page()) { ?>
         <a class="home" href="<?php bloginfo('url'); ?>"><i class="czs-home-l"></i></a>
     <?php } ?>

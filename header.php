@@ -60,35 +60,17 @@
                 
                <!-- <div class="fixed-menus"></div> -->
                 <div class="fields">
-                    <span><i class="czs-time-l"></i> <?php echo get_post_time("Y-m-d h:i:s"); ?>発表 /
-                    <span><i class="czs-pen-write"></i> <?php echo get_post_time("Y-m-d h:i:s"); ?>変更 /
-                    <span><i class="czs-user"></i> <?php echo get_the_author_meta('nickname', get_post()->post_author);?> /
+                    <span><i class="czs-time-l"></i> <?php echo get_post_time("Y-m-d"); ?> 発表 /
+                    <span><i class="czs-pen-write"></i> <?php echo get_post_modified_time("Y-m-d"); ?> 変更 /
+                    <span><i class="czs-user"></i> <?php echo get_the_author_meta('display_name', get_post()->post_author);?> /
                     <span><i class="czs-talk-l"></i> <?php comments_number('0', '1', '%'); ?></span> /
                     
                 </div>
-<!--
-
-                <div class="socials">
-                    <div class="donate">
-                        <a href="javascript:;"><i class="czs-coin-l s"></i><i class="czs-coin h"></i> 赏</a>
-                        <div class="window">
-                            <ul>
-                                <?php if (get_option('biji_pay_img_alipay')) echo '<li class="alipay"><img src="' . get_option('biji_pay_img_alipay') . '"/></li>'; ?>
-                                <?php if (get_option('biji_pay_img_wexpay')) echo '<li><img src="' . get_option('biji_pay_img_wexpay') . '"/></li>'; ?>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="share">
-                        <a href="javascript:void(0);"
-                           data-qrcode="//api.qrserver.com/v1/create-qr-code/?size=150x150&margin=10&data=<?php the_permalink(); ?>">
-                            <i class="czs-scan-l s"></i><i class="czs-qrcode-l h"></i> 码</a>
-                    </div>
-                </div> -->
             <?php } else { ?>
                 <h2 class="fixed-title"></h2>
-                <div class="fixed-menus"></div>
+                <!-- <div class="fixed-menus"></div> -->
                 <!--<div class="placard">
-                    <?= get_theme_mod('biji_setting_placard'); ?>
+                    
                 </div>-->
                 
             <?php } ?>
