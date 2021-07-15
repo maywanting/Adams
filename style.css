@@ -1,11 +1,9 @@
 @charset "utf-8";
 /*
 	Theme Name: Adams
-	Theme URL: https://biji.io
 	Description: Simple is beautiful
 	Author: Tokin
-	Author URI: https://biji.io
-	Version: 1.4.26
+	Editer: May
 */
 /* Reset */
 html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -28,6 +26,7 @@ pre{position:relative;white-space:pre-wrap;word-wrap:break-word;line-height:1.5r
 code{overflow:auto;font-size:.88rem;max-height: 18rem;border-radius: 3px;background: rgba(152, 152, 152, 0.06);box-shadow: 0 0 0 1px rgba(152, 152, 152, 0.1);}
 code{display:inline-block;margin:-.36rem 0;padding:0 .36rem;color:#AAB2BD;line-height:1.6rem;}
 pre code{display:block;-webkit-overflow-scrolling:touch;overflow-scrolling:touch;padding: 1rem;}
+figcaption{text-align:center;font-size:0.8rem;}
 
 /*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */
 .prettyprint{font-family:Menlo,Bitstream Vera Sans Mono,DejaVu Sans Mono,Monaco,Consolas,monospace;border:0 !important;}
