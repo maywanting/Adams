@@ -20,11 +20,11 @@ ol, ul { list-style: none; }
 input,textarea,button {outline:none;-webkit-appearance:none;}
 blockquote,q {quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after {content:none;}
-blockquote,q {background:#fafafa;margin:20px 0;padding:2.5rem 4rem;position:relative;word-wrap:break-word;}
-blockquote:before,q:before,blockquote:after,q:after{content:'“';color:#CCD1D9;font-size:6rem;position:absolute;top:1rem;left:1rem;font-family: "Arial",sans-serif;}
-blockquote:after,q:after{content:'”';top:initial;left:initial;bottom:-2rem;right:1rem;}
+blockquote,q {background:#fafafa;margin:20px 0;padding:1rem 2rem;position:relative;word-wrap:break-word;line-height:2rem;border-left:10px solid #999;}
+/* blockquote:before,q:before,blockquote:after,q:after{content:'“';color:#CCD1D9;font-size:6rem;position:absolute;top:1rem;left:1rem;font-family: "Arial",sans-serif;} */
+/* blockquote:after,q:after{content:'”';top:initial;left:initial;bottom:-2rem;right:1rem;} */
 blockquote p,q p{margin:0!important;padding:0;line-height:1.8rem;overflow:hidden;}
-pre{position:relative;white-space:pre-wrap;word-wrap:break-word;}
+pre{position:relative;white-space:pre-wrap;word-wrap:break-word;line-height:1.5rem;}
 code{overflow:auto;font-size:.88rem;max-height: 18rem;border-radius: 3px;background: rgba(152, 152, 152, 0.06);box-shadow: 0 0 0 1px rgba(152, 152, 152, 0.1);}
 code{display:inline-block;margin:-.36rem 0;padding:0 .36rem;color:#AAB2BD;line-height:1.6rem;}
 pre code{display:block;-webkit-overflow-scrolling:touch;overflow-scrolling:touch;padding: 1rem;}
