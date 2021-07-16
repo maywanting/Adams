@@ -11,8 +11,14 @@ get_header(); ?>
                 $previous_month = $month = 0;
                 $ul_open = false;
                 // $myposts = get_posts('numberposts=-1&orderby=post_date&order=DESC');
-                $type = is_user_logged_in() ? 'any' : 'publish';
-                $myposts = get_posts("numberposts=-1&post_status=$type&orderby=post_date&order=DESC");
+                $type = is_user_logged_in() ? ['publish', 'private'] : 'publish';
+                // $myposts = get_posts("numberposts=-1&post_status=$type&orderby=post_date&order=DESC");
+                $myposts = get_posts([
+                    'numberposts' => -1,
+                    'post_status' => $type,
+                    'orderby' => 'post_date',
+                    'order' => 'DESC'
+                ]);
                 foreach ($myposts as $post) :
                     setup_postdata($post);
                     $year = mysql2date('Y', $post->post_date);
