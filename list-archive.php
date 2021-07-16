@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: 文章归档
+Template Name: Archives
 */
 get_header(); ?>
     <section class="section content main-load">

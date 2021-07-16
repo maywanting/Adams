@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: 读者排行
+Template Name: readers ranking
 */
 get_header(); ?>
     <section class="section content main-load">
