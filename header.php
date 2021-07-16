@@ -31,7 +31,6 @@
             <h1 class="fullname"><?php (!is_home()) ? wp_title("") : bloginfo('name'); ?></h1>
         </hgroup>
 
-        
         <?php
         /*wp_nav_menu(
             array(
@@ -57,22 +56,18 @@
         <div class="container">
             <?php if (is_single() || is_page()) { ?>
                 <h2 class="fixed-title"></h2>
-                
                <!-- <div class="fixed-menus"></div> -->
                 <div class="fields">
                     <span><i class="czs-time-l"></i> <?php echo get_post_time("Y-m-d"); ?> 発表 /
                     <span><i class="czs-pen-write"></i> <?php echo get_post_modified_time("Y-m-d"); ?> 変更 /
                     <span><i class="czs-user"></i> <?php echo get_the_author_meta('display_name', get_post()->post_author);?> /
                     <span><i class="czs-talk-l"></i> <?php comments_number('0', '1', '%'); ?></span> /
-                    
                 </div>
             <?php } else { ?>
                 <h2 class="fixed-title"></h2>
                 <!-- <div class="fixed-menus"></div> -->
                 <!--<div class="placard">
-                    
                 </div>-->
-                
             <?php } ?>
         </div>
     </section>

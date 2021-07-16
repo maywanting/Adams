@@ -11,4 +11,4 @@ Version of Tokinx/Adams : [1.4.26](https://github.com/Tokinx/Adams/releases/tag/
 - Display the basic information about the post(create time, edit time, create user name, comment number)(2021-6-17)
 - Add the login icon of wordpress admin system(2021-7-14)
 - Modify the css style of 'Quote'(2021-7-15)
-
+- Adjust the archive page:When user login, the private page will also be listed in the archive(2021-7-16)
